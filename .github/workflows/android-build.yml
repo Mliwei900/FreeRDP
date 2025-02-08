@@ -57,7 +57,7 @@ jobs:
           cp path_to_apk_output/*.apk $HOME/
           
       - name: Upload APK artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: freerdp-apk
           path: $HOME/*.apk
